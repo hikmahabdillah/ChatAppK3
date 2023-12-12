@@ -9,10 +9,10 @@
 <?php 
 // Display success/error messages
 if (isset($_SESSION['update_profile_success'])) {
-  echo '<div style="color: green;">' . $_SESSION['update_profile_success'] . '</div>';
+  echo '<div style="color: green; background-color: lime; padding: 10px; border-radius: 10px; margin-bottom: 20px;">' . $_SESSION['update_profile_success'] . '</div>';
   unset($_SESSION['update_profile_success']);
 } elseif (isset($_SESSION['update_profile_error'])) {
-  echo '<div style="color: red;">' . $_SESSION['update_profile_error'] . '</div>';
+  echo '<div style="color: red; background-color: pink; padding: 10px; border-radius: 10px; margin-bottom: 20px;">' . $_SESSION['update_profile_error'] . '</div>';
   unset($_SESSION['update_profile_error']);
 }?>
 
